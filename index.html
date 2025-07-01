@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook-P5-TM04A</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 4A 5to Primaria</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Que los estudiantes comprendan el proceso conceptual de entrenar un modelo de IA simple (entrenamiento supervisado) usando la A.I. Lens.</li>
+                                        <li>Que aprendan los pasos de dar ejemplos, etiquetar y probar.</li>
+                                        <li>Y que diseñen un proyecto donde su robot buscará y reaccionará a un objeto específico que ellos mismos le "enseñarán", obteniendo el plan de Xolo para esta misión.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">⚡ Saludo Interactivo con IA:</strong> Activación y personalización de la IA.</li>
+                                        <li><strong class="tactic-highlight">⚡ "I Can Statement" + Ejemplificación:</strong> Introducir el "modo aprendizaje" de la lente y clarificar objetivos.</li>
+                                        <li><strong class="tactic-highlight">⚡ AI GYM:</strong> Aprender sobre entrenamiento supervisado y comandos de la A.I. Lens para objetos.</li>
+                                        <li><strong class="tactic-highlight">⚡ Brain Spark:</strong> Elección del objeto a entrenar y diseño del plan de búsqueda/reacción individual.</li>
+                                        <li><strong class="tactic-highlight">⚡ Gnius STORM:</strong> Compartición de objetos y planes de misión.</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Un conjunto de 4 planes (GCS) individuales por equipo, cada uno para una misión de búsqueda y reacción a un objeto personalizado (ID1), listos para ser implementados y probados en la Sesión 4B.</li>
+                                        <li>Un objeto físico elegido por el equipo que será su "ID1" para la próxima sesión.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Acceso a MakeCode (<a href="https://makecode.microbit.org/" target="_blank">https://makecode.microbit.org/</a>).</li>
+                                        <li>Chat "Agente Gnius" (Xolo) activo y funcionando.</li>
+                                        <li>Presentación de diapositivas (Diapositivas 1-11).</li>
+                                        <li>1 Nezha Pro Sports Kit (con A.I. Lens) por equipo de 4 estudiantes.</li>
+                                        <li>Objetos variados (borradores, juguetes pequeños, botellas de agua, etc.) para que los equipos elijan su "ID1".</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna):</strong>
+                                            <ul>
+                                                <li>Verificar conexión a internet y funcionamiento de MakeCode.</li>
+                                                <li>Tener los kits (con A.I. Lens) listos.</li>
+                                                <li>Tener la presentación de diapositivas (1-11) lista y en orden.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Revisar el flujo de la sesión, diálogos y tiempos.</li>
+                                        <li><strong>Preparación Física:</strong> Ten un objeto simple a la mano para demostrar el "modo aprendizaje" y etiquetado conceptualmente.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Saludo de I.A. con todos ⏰ 3 minutos</h2>
+                <p>Crear un ambiente acogedor y activar a la IA para la sesión.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Bienvenida e Instrucción ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 2) Da la bienvenida a los alumnos y guíalos para que activen a Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Hola, entrenadores de Inteligencia Artificial! Vamos a activar a nuestro copiloto, Xolo. Por favor, salúdenlo en el chat y díganle su nombre y cuáles son sus gustos e intereses para empezar la misión de hoy.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Verificación de Interacción ⏰ 2 minutos</h3>
+                            <p>Monitorea la interacción de los alumnos con la IA, asegurándote de que todos reciban el saludo de bienvenida.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Fantástico! Veo que Xolo les está contestando y está listo para la acción. Si alguien no ha recibido respuesta, levante la mano para ayudarle.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: I Can Statement + Ejemplificación ⏰ 7 minutos</h2>
+                <p>Presentar el "modo aprendizaje" de la A.I. Lens y el objetivo de la clase.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Contextualización - El "Modo Aprendizaje" ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 4) Anuncia el inicio de la actividad y muestra un objeto único que sirva de ejemplo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Muy bien, iniciamos la actividad <strong>'I Can Statement + Ejemplificación'</strong>. (Sostiene un objeto, ej. un borrador con forma de cohete). Hasta ahora, la lente reconocía cosas como el color 'rojo' porque ya venía 'enseñada' de fábrica. Pero, ¿y si queremos que reconozca este borrador específico y no otro? Para eso, ¡usaremos su modo de aprendizaje!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Explicación del Grabado y Etiquetado ⏰ 2 minutos</h3>
+                            <p>Explica cómo la lente graba imágenes y les asigna un ID.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">La lente tiene una función especial para que nosotros le enseñemos cosas nuevas. Es como si tomáramos una 'foto inteligente' de nuestro objeto y la grabáramos en la memoria de la IA. Le daremos un nombre o una etiqueta, como 'ID1'. ¡Es como si le diéramos su propio nombre secreto!</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: "I Can Statement" ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 3) Presenta el objetivo concreto de la sesión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Hoy vamos a planificar cómo ser los profesores de nuestra IA. Al final de esta sesión, podrán decir: <strong>'Yo puedo explicar los pasos para entrenar a la A.I. Lens para que aprenda un objeto nuevo, y tengo un plan para que mi robot busque y reaccione a ese objeto.'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: AI GYM ⏰ 15 minutos</h2>
+                <p>Guiar a los alumnos para que aprendan con Xolo sobre el "entrenamiento supervisado" y los comandos para objetos.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Exploración con Xolo - Entrenamiento Supervisado ⏰ 7 minutos</h3>
+                            <p>(Proyectar Diapositiva 5 y 6) Anuncia la actividad y guía a los alumnos para que pidan la explicación a Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <p class="dialogue assistant">¡Perfecto, ahora vamos al <strong>A.I. GYM</strong> para entender cómo enseñarle a nuestra IA! Pidanle a Xolo la siguiente información, escribiendo en el chat: <strong>'Mi perfil es [escribe tu perfil] y quiero que me enseñes sobre el Entrenamiento Supervisado para la A.I. Lens.'</strong> Xolo les explicará el proceso de 3 pasos: Dar Ejemplos, Etiquetar y Probar.</p>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Los Comandos del Plan para Objetos ⏰ 8 minutos</h3>
+                            <p>(Proyectar Diapositiva 7) Indica a los alumnos que presten atención a los comandos que Xolo les mostrará para crear su plan.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <p class="dialogue assistant">¡Excelente! Ahora que saben cómo se entrena a la IA, necesitan el comando para preguntarle si está viendo su objeto. Xolo les va a mostrar el comando exacto que usaremos en nuestro plan. Presten atención.</p>
+                            <pre class="dialogue assistant" style="color: #d32f2f;">// Para preguntar si la lente ve el objeto que le enseñamos
+SI (Image contains learned objects: ID1):
+    // ... haz algo si lo ve ...
+SINO:
+    // ... haz otra cosa si no lo ve ...
+FIN SI</pre>
+                            <p class="dialogue assistant">Este comando nos dirá si la lente ve el objeto que le enseñamos. ¡Es perfecto para usarlo en una condición SI...!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Brain Spark ⏰ 10 minutos</h2>
+                <p>Proceso de elección del objeto a entrenar y diseño del plan de búsqueda/reacción individual.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Elección del Objeto ID1 (Equipo de 4) ⏰ 4 minutos</h3>
+                            <p>(Proyectar Diapositiva 8) Anuncia la actividad y guía a los equipos para que elijan su objeto a entrenar.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <p class="dialogue assistant">¡Llegamos al <strong>Brain Spark</strong>! Reúnanse en sus equipos de 4 integrantes. Su primera misión es elegir un objeto que será su 'ID1'. Debe ser único y fácil de distinguir. ¡Piensen bien, este será el tesoro que su robot buscará! (Circula para guiar la elección y evitar objetos muy complejos o parecidos).</p>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Diseño de la Misión y el Plan Individual (Cada Integrante) ⏰ 6 minutos</h3>
+                            <p>(Proyectar Diapositiva 9) Guía a cada estudiante para que diseñe su misión individual y pida el plan a Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <p class="dialogue assistant">Ahora que tienen su objeto ID1, cada uno de ustedes, de forma INDIVIDUAL, va a pensar en una misión de búsqueda y reacción específica para el robot. No puede solo esperar, ¡debe buscar activamente su objeto! Por ejemplo: <strong>'Quiero que mi robot gire lentamente buscando el sacapuntas. Cuando lo vea, se detendrá y avanzará hacia él.'</strong> Describan su misión a Xolo para que les ayude a diseñar la lógica y genere su plan. Cada integrante tendrá su propio plan, ¡así cada equipo tendrá 4 planes diferentes para el mismo objeto!</p>
+                            <pre class="dialogue assistant" style="color: #d32f2f;">// PLAN de ejemplo para un robot buscador de objeto ID1
+AL INICIO:
+    Initialize AI-Lens
+    Switch function as Object Learning // O el modo que corresponda
+    mostrar texto "Buscando ID1"
+
+POR SIEMPRE:
+    SI (Image contains learned objects: ID1):
+        // ¡Objeto encontrado! Reaccionar.
+        nezha_motor_M1_velocidad(0)  // Primero, detener el giro
+        nezha_motor_M2_velocidad(0)
+        // nezha_led_todos(VERDE)  // Encender luz de éxito
+        ESPERAR(500)
+        nezha_motor_M1_velocidad(40)  // Avanzar hacia el objeto
+        nezha_motor_M2_velocidad(40)
+    SINO:
+        // No veo el objeto, seguir buscando.
+        // nezha_led_todos(APAGADO)
+        nezha_motor_M1_velocidad(30)  // Girar lentamente
+        nezha_motor_M2_velocidad(-30)
+    FIN SI</pre>
+                            <p class="dialogue assistant">¡Guarden muy bien sus planes individuales y el objeto 'ID1' de su equipo! En la próxima clase, los usarán para entrenar a la IA y darle vida a su robot buscador.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM ⏰ 5 minutos</h2>
+                <p>Compartir los objetos elegidos y los planes de misión individuales.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Gnius STORM (Think - Individual) ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 10) Anuncia la actividad final e instruye una reflexión individual.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <p class="dialogue assistant">¡Llegamos a la última actividad, el <strong>Gnius STORM</strong>! Antes de compartir, piensen un momento: ¿Por qué creen que la calidad de los ejemplos que le demos a la IA será importante para que aprenda bien su objeto?</p>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Gnius STORM (Share - Grupo) ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 11) Indica a los equipos que muestren su objeto y describan su misión individual.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <p class="dialogue assistant">¡Ahora, a compartir! Un portavoz de cada equipo nos mostrará el objeto que eligieron como 'ID1' y describirá brevemente la misión de búsqueda que diseñaron para su robot. ¡Vamos a ver esos tesoros y misiones!</p>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Gnius STORM (Reflexión Final y Cierre) ⏰ 1 minuto</h3>
+                            <p>Cierra la sesión y conecta con la siguiente unidad.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <p class="dialogue assistant">¡Excelentes elecciones y planes de misión! Hoy han aprendido el secreto de cómo enseñarle a una IA: con buenos ejemplos y supervisión. Son oficialmente entrenadores de IA. En la próxima sesión, llevarán a cabo este entrenamiento y programarán a sus robots para que se conviertan en verdaderos buscadores de tesoros personalizados.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
